@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+	--blue0: black;
+	--blue1: #03045e;
+	--blue2: #023e8a;
+	--blue2-4: #023d8a60;
+	--blue2-7: #023d8ac0;
+	--blue3: #0077b6;
+	--blue3-6: #0076b6c7;
+	--blue4: #0096c7;
+	--blue5: #00b4d8;
+	--blue6: #48cae4;
+	--blue7: #90e0ef;
+	--blue8: #ade8f4;
+	--blue9: #caf0f8;
+	--blue10w: white;
+}
+* {
+	/* border: 1px solid #333;
+  margin: 2px; */
+	font-family: "Roboto", sans-serif;
+}
+body {
+	margin: 0;
+}
+.container {
+	width: 75%;
+	margin: auto;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logoframe {
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logoframe > a {
+	display: flex;
+	width: 200px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.logoframe > a > img {
+	width: 150%;
+}
+.navul {
+	display: flex;
+	align-items: center;
+
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+.navli > a {
+	padding: 6px 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	color: var(--blue1);
+}
+.navli > a:hover {
+	border-bottom: 2px solid var(--blue3);
+	color: var(--blue3);
+	font-weight: 500;
+}
+.navli:hover > svg {
+	fill: var(--blue3);
+}
+.herobg {
+	background-image: url(../media/images/saranda-view-herobg.jpeg);
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	position: absolute;
+	top: 70px;
+	z-index: -3;
+	clip-path: circle(1750px at 50% -250%);
+}
+
+.innerhero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	padding-top: 100px;
+	height: 500px;
+}
+.innerhero > h1 {
+	margin-block-start: 0.1em;
+	margin-block-end: 0.1em;
+	color: var(--blue10w);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 1.8rem;
+	text-shadow: 1px 1px 5px var(--blue0);
+}
+.innerhero > h1:not(h1:first-child) {
+	font-size: 3.2rem;
+	font-weight: 900; /* te gjithe pervec te parit */
+}
+.lines::before {
+	width: 100px;
+	height: 3px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 100%);
+	content: "";
+	display: block;
+	position: relative;
+	top: 33px;
+	right: 120px;
+}
+.lines::after {
+	width: 100px;
+	height: 3px;
+	background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, white 100%);
+	content: "";
+	display: block;
+	position: relative;
+	top: -33px;
+	left: 247px;
+}
+.herobtns {
+	display: flex;
+}
+.herobtns button {
+	border: none;
+	padding: 14px 24px;
+	border-radius: 200px;
+	margin: 0 10px;
+	text-transform: uppercase;
+	color: var(--blue1);
+	font-weight: 500;
+	transition: all 0.2s;
+}
+.herobtns > .primary {
+	color: var(--blue10w);
+}
+.primary {
+	background-color: var(--blue3);
+	color: var(--blue10w);
+	transition: all 0.2s;
+}
+.primary:hover {
+	box-shadow: inset 1px 1px 20px -5px var(--blue7);
+}
+.herobtns > button:nth-child(2):hover {
+	box-shadow: inset 1px 1px 20px -5px var(--blue1);
+}
+.scrollopt {
+	position: relative;
+	top: 145px;
+	display: grid;
+	place-items: center;
+	box-shadow: 0px 0px 20px 5px var(--blue0);
+	width: 60px;
+	height: 60px;
+	outline: 0px solid var(--blue10w);
+	background-color: var(--blue10w);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.scrollopt:hover {
+	outline: 2px solid var(--blue10w);
+	outline-offset: 10px;
+}
+.scrollopt > svg {
+	width: 30px;
+	height: 30px;
+	fill: var(--blue0);
+}
+/* mbaron header */
+/* fillon about us section */
+section {
+	padding: 70px 0;
+}
+
+.innerabout {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.abouttext {
+	width: 50%;
+}
+.abouttittle,
+.abouttext > h1,
+.aboutlink {
+	text-transform: uppercase;
+}
+.abouttittle {
+	color: var(--blue5);
+}
+
+.aboutlink {
+	font-size: 15px;
+	padding: 16px 20px;
+	border-radius: 100px;
+	text-decoration: none;
+	position: relative;
+	top: 15px;
+}
+.aboutimages {
+	border: 10px solid var(--blue3);
+	width: 400px;
+	height: 300px;
+	position: relative;
+	z-index: -2;
+}
+.aboutimageframe {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+.aboutimageframe:first-child {
+	z-index: 0;
+	top: 20px;
+	left: -60px;
+}
+.aboutimageframe:nth-child(2) {
+	z-index: -1;
+	top: -130px;
+	left: 50px;
+}
+.aboutimageframe > img {
+	width: 100%;
+	border-radius: 30px;
+}
+/* mbaron about */
+/* fillon services */
+.servicessection {
+	background-color: var(--blue2-7);
+}
+
+.servicesheading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.servicesheading > * {
+	text-align: center;
+	width: 70%;
+}
+.servicesheading > h1 {
+	font-weight: 900;
+	color: var(--blue10w);
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+.servicesheading > p {
+	color: var(--blue7);
+}
+.thin {
+	font-weight: 300;
+}
+.devider {
+	width: 100px;
+	height: 4px;
+	background-color: var(--blue1);
+}
+.servicesgrid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+.servicescard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border: 1px solid var(--blue2-4);
+	position: relative;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+.servicescard > svg {
+	width: 50px;
+	height: 50px;
+	fill: var(--blue9);
+}
+.servicescard > * {
+	text-align: center;
+	color: var(--blue8);
+}
+.servicescard > a {
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: var(--blue2);
+	font-weight: 600;
+	transition: all 0.3s;
+}
+.servicescard:hover {
+	background-color: var(--blue2);
+}
+.servicescard:hover a {
+	color: var(--blue5);
+}
+.shine {
+	width: 150px;
+	height: 2px;
+	position: relative;
+	background: linear-gradient(
+		-90deg,
+		rgba(255, 255, 255, 0) 0%,
+		white 50%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	display: grid;
+	place-items: center;
+}
+.dot {
+	width: 4px;
+	height: 4px;
+	background-color: var(--blue10w);
+	box-shadow: 0 0 10px 3px var(--blue10w);
+	border-radius: 100%;
+	position: relative;
+	top: -1px;
+}
+.hide {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	display: none;
+}
+.hide > svg {
+	fill: var(--blue8);
+}
+.servicescard:hover > .hide {
+	display: block;
+}
+/* mbaron services */
+/* fillon why core */
+
+.whycoreh {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.whycoreh > * {
+	text-align: center;
+}
+.whycoreh > h1,
+h2 {
+	text-transform: uppercase;
+}
+.whycoreh > p {
+	width: 70%;
+}
+.innercore {
+	display: flex;
+	justify-content: space-evenly;
+}
+.whycard {
+	display: flex;
+	width: 33.333%;
+	flex-direction: column;
+	background-color: var(--blue9);
+	justify-content: flex-start;
+	align-items: center;
+	width: 22%;
+	outline: 1px solid var(--blue4);
+	outline-offset: 10px;
+	padding: 50px 20px;
+}
+.whycard > h1,
+h2 {
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+.whycard > p {
+	padding-top: 10px;
+	text-align: center;
+	text-transform: capitalize;
+	width: 75%;
+}
+.whycard > * {
+	margin: 0.2em;
+}
+
+.whyheading {
+	font-size: 1.7rem;
+	color: var(--blue3);
+}
+/* whycard ends */
+/* contact section fillon */
+
+.innercontact {
+	display: flex;
+	align-items: center;
+}
+.contacttext {
+	width: 500px;
+	height: 500px;
+	position: relative;
+}
+.contacttextfront {
+	position: relative;
+
+	width: 500px;
+	padding: 80px 60px 50px 30px;
+	height: 400px;
+	box-sizing: border-box;
+	background-color: var(--blue3-6);
+}
+.contacttextfront > * {
+	color: var(--blue10w);
+	text-shadow: 1px 1px 5px var(--blue1);
+}
+.contacttextfront > h1 {
+	text-transform: uppercase;
+}
+.contactdevider {
+	width: 100px;
+	height: 2px;
+	background-color: var(--blue10w);
+}
+.contacttextback {
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -2;
+	background-image: url(../media/images/meeting2.jpg);
+	background-size: cover;
+}
+.contactform {
+	background-color: var(--blue10w);
+	box-shadow: 0px 0px 20px 2px var(--blue2-4);
+	width: 50%;
+	padding: 40px;
+	box-sizing: border-box;
+	position: relative;
+	top: 60px;
+	left: -50px;
+	display: flex;
+	flex-direction: column;
+}
+.contactform > h1 {
+	text-transform: uppercase;
+	font-size: 2.2rem;
+}
+.formrow,
+#lastformrow {
+	margin: 10px 0;
+	display: flex;
+	gap: 20px;
+}
+.formcol,
+.lastformcol {
+	display: flex;
+
+	flex-direction: column;
+}
+.formcol > label,
+.lastformcol > label {
+	color: var(--blue4);
+	text-transform: uppercase;
+	margin: 4px 0;
+}
+.formcol > input,
+.lastformcol > textarea {
+	font-size: 18px;
+	padding: 4px;
+	outline: none;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #aaa;
+}
+
+.formcol > input::placeholder:not(:nth-child(3)) {
+	text-transform: capitalize;
+}
+#lastformrow {
+	display: flex;
+}
+.lastformcol {
+	width: 80%;
+}
+#lastformrow > button {
+	background-color: var(--blue3);
+
+	width: 60px;
+	height: 60px;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+}
+#lastformrow > button > svg {
+	fill: var(--blue10w);
+	width: 70%;
+	rotate: 10deg;
+}
+/* mbaron contact */
+/* fillon footer */
+
+footer {
+	margin-top: 100px;
+	padding-top: 50px;
+	position: relative;
+	overflow: hidden;
+}
+
+.subscriptionform {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subheading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.subheading > * {
+	text-align: center;
+}
+.subheading > h1 {
+	color: var(--blue10w);
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+.subheading > p {
+	color: var(--blue8);
+	width: 70%;
+}
+.subform {
+	border-radius: 100px;
+	padding: 4px 4px 4px 10px;
+	width: 40%;
+	background-color: var(--blue10w);
+	display: flex;
+	justify-content: space-between;
+}
+.subform > label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.subform svg {
+	width: 18px;
+	margin-left: 5px;
+	fill: #666;
+}
+.subform > input {
+	width: 85%;
+	border: none;
+	outline: none;
+}
+.subform > input::placeholder {
+	text-transform: capitalize;
+}
+.subbutton {
+	width: 35px;
+	height: 35px;
+	background-color: var(--blue3);
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+}
+.subbutton > svg {
+	fill: white;
+}
+.cpr {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	padding: 30px 10px;
+	border-top: 4px solid var(--blue3-6);
+}
+.socialicons {
+	display: flex;
+}
+.sicon {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	transition: all 0.2s;
+}
+.sicon:hover {
+	background-color: var(--blue2);
+}
+.sicon:hover > svg {
+	fill: var(--blue10w);
+}
+
+.sicon > svg {
+	width: 25px;
+	fill: var(--blue3);
+}
+.footerbg {
+	background-color: #333;
+	width: 100%;
+	height: 3000px;
+	position: absolute;
+	bottom: -2630px;
+	z-index: -2;
+	clip-path: circle(3000px at 50% 100%);
+}
+/* perfundon footer */
+/* fillon scrollspy */
+#scrollspy {
+	position: fixed;
+	top: 40vh;
+	right: 100px;
+	z-index: 10;
+	width: 20px;
+	height: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.innerscroll {
+	position: relative;
+	display: flex;
+	text-decoration: none;
+	width: 90px;
+	height: 25px;
+	justify-content: right;
+	align-items: center;
+}
+.innerscroll > .spyname {
+	display: none;
+
+	color: var(--blue2);
+	transition: all 0.4s;
+	text-shadow: 0px 0px 20px var(--blue10w);
+}
+.innerscroll > .spycirlce {
+	width: 15px;
+	height: 15px;
+	position: relative;
+	left: 0;
+	outline: 1px solid var(--blue2-7);
+	transition: 0.08s ease-in;
+	background-color: var(--blue2-7);
+	border-radius: 100%;
+
+	margin-left: 10px;
+}
+.innerscroll:hover > .spyname {
+	display: block;
+}
+.innerscroll:hover > .spycirlce {
+	outline-offset: 4px;
+}
+
+#phonenav {
+	display: none;
+}
+@media screen and (width<500px) {
+	#desktopnav {
+		display: none;
+	}
+	#phonenav {
+		display: flex;
+	}
+
+	.container {
+		width: 90%;
+	}
+	.innerabout,
+	.innerservice,
+	.innercore,
+	.innercontact {
+		flex-direction: column;
+	}
+	.servicesgrid {
+		grid-template-columns: 1fr;
+	}
+	.innerabout > * {
+		width: 100%;
+		margin: 10vh 0;
+	}
+	.whycard {
+		width: 60%;
+		margin: auto;
+	}
+	.innercore {
+		gap: 30px;
+	}
+	.contacttext {
+		width: 90%;
+	}
+	.contacttextfront {
+		width: 100%;
+		height: 500px;
+		padding-top: 40px;
+	}
+	.contacttextback {
+		width: 100%;
+		height: 500px;
+	}
+	.contactform {
+		width: 100%;
+		left: 0;
+	}
+	.contactform > .formrow {
+		flex-direction: column;
+	}
+}
