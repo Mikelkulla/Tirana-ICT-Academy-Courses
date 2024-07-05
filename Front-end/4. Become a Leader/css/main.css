@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* * {
+  border: 1px solid #333;
+  margin: 3px;
+} */
+:root {
+  --bgblue: #3851d0;
+  --bgwhite: #ffffff;
+  --btnrose: #fadcda;
+  --navbtnbg: #fffeff;
+  --txtrose: #e07f8a;
+  --navtxtlightblue: #8298fb;
+  --txtwhite: #f8fbff;
+  --herobtncol: #f67071;
+  --quotemarklightrose: #fdf1f1;
+  --footertxthead: #454551;
+  --txtparagraph: #373a5b;
+  --heroshadow: #d2d8fa;
+}
+.f-rob {
+  font-family: "Roboto", sans-serif;
+}
+.f-jos {
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 130vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+header > .container {
+  display: flex;
+
+  flex-direction: column;
+  position: relative;
+}
+.background {
+  background-color: var(--bgblue);
+  width: 2000px;
+
+  left: -40vh;
+  top: -100vh;
+  z-index: -1;
+  position: absolute;
+  height: 200vh;
+  overflow: hidden;
+  border-radius: 110px;
+  box-shadow: 20px 30px 0px 5px var(--heroshadow);
+  transform: rotate(126deg) translate(-47px, 59px) skew(1deg, 26deg);
+}
+.navbar {
+  width: 80%;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarleft {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.navbarleft > .logo {
+  color: var(--txtwhite);
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.navbarright {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.navul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navli > a {
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--navtxtlightblue);
+}
+li > a.active {
+  color: var(--txtwhite);
+}
+a.navbtn {
+  color: var(--txtrose);
+  background-color: var(--navbtnbg);
+  padding: 20px 25px;
+}
+a.navbtn:hover {
+  background-color: var(--herobtncol);
+  color: var(--quotemarklightrose);
+}
+.herosection {
+  width: 80%;
+  margin: 0 auto;
+}
+.innerhero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+}
+.heroleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.herotitle {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 3.2rem;
+  color: var(--txtwhite);
+}
+.normalparagraph {
+  color: var(--txtwhite);
+  font-weight: 300;
+  line-height: 30px;
+}
+.herobtn {
+  position: relative;
+  top: 90px;
+}
+.btn {
+  background-color: var(--herobtncol);
+  color: var(--quotemarklightrose);
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: var(--btnrose);
+  color: var(--herobtncol);
+}
+.heroright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.heroright > img {
+  position: relative;
+  bottom: -120px;
+  left: 50px;
+  height: 70vh;
+}
+.mousebtn {
+  z-index: 1;
+}
+.mousebtn > svg {
+  position: absolute;
+  top: 670px;
+  left: 240px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--navbtnbg);
+  fill: var(--herobtncol);
+  border-radius: 100px;
+
+  transition: all 0.2s;
+  rotate: 0deg;
+}
+.mousebtn:hover svg {
+  background-color: var(--herobtncol);
+  fill: var(--btnrose);
+}
+
+/* mbaron header */
+/* fillon style of leadership */
+
+.styleofleadership {
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerstylelead {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.styleleft {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.styleleft > * {
+  color: var(--footertxthead);
+}
+.styletitle {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.stylebtn {
+  display: flex;
+  align-items: center;
+}
+.stylebtn > a {
+}
+.normbtn {
+  position: relative;
+  top: 50px;
+  padding: 18px 28px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--herobtncol);
+  background-color: var(--btnrose);
+  text-decoration: none;
+}
+.normbtn:hover {
+  color: var(--btnrose);
+  background-color: var(--herobtncol);
+}
+
+.styleright {
+  width: 50%;
+  position: relative;
+
+  height: 700px;
+}
+.leftcards,
+.rightcards {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftcards {
+  bottom: -70px;
+  left: 0;
+}
+.rightcards {
+  top: -150px;
+  right: -80px;
+}
+.stylecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  width: 225px;
+  height: 270px;
+  box-shadow: 3px 3px 30px 2px #3333;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 0.3s;
+}
+.stylecard:hover {
+  background: rgb(49, 68, 227);
+  background: linear-gradient(
+    144deg,
+    rgba(49, 68, 227, 1) 6%,
+    rgba(51, 77, 198, 1) 7%,
+    rgba(47, 66, 233, 1) 41%,
+    rgba(48, 73, 208, 1) 42%,
+    rgba(51, 77, 198, 1) 43%,
+    rgba(41, 60, 227, 1) 68%,
+    rgba(51, 77, 198, 1) 70%,
+    rgba(42, 64, 255, 1) 100%
+  );
+  scale: 1.1;
+}
+.stylecard:hover h3 {
+  color: var(--txtwhite);
+}
+.stylecard:hover p {
+  color: var(--txtwhite);
+}
+.stylecard:hover img {
+  background-color: var(--navtxtlightblue);
+}
+.stylecard > img {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--btnrose);
+  border-radius: 100%;
+  padding: 10px;
+}
+.stylecard > .cardtitle {
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--txtparagraph);
+}
+.stylecard > .cardprg {
+  font-size: 0.9rem;
+  text-align: justify;
+  margin: 0;
+  color: var(--txtparagraph);
+}
+/* ends style section */
+/* start quote section */
+.quote {
+  margin: 100px 0;
+  overflow: hidden;
+}
+.quote > .container {
+  position: relative;
+}
+.quote .bgcontainer {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  display: flex;
+}
+.quote .quotebackground {
+  position: absolute;
+  height: 1552px;
+  width: 1717px;
+  rotate: 104deg;
+  transform: rotatex(143deg) rotatey(236deg) rotatez(3deg);
+  left: -498px;
+  top: -168px;
+  z-index: -1;
+  background: rgb(49, 68, 227);
+  border-radius: 95px;
+  box-shadow: 30px 50px 0px 10px #d2d8fa;
+}
+.quotescontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.quotescontainer > .arrows > button {
+  position: relative;
+  top: 60px;
+  background-color: var(--btnrose);
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+.quotescontainer > .arrows svg {
+  width: 40px;
+
+  height: 40px;
+
+  fill: var(--herobtncol);
+}
+.quotescontainer > .arrows button:hover {
+  background-color: var(--herobtncol);
+}
+.quotescontainer > .arrows svg:hover {
+  fill: var(--btnrose);
+}
+.quotescontainer > svg {
+  position: relative;
+  top: 70px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 0.2;
+}
+
+.quote .headcontainer {
+  width: 60%;
+  margin: auto;
+}
+.quote .textcontainer {
+  width: 50%;
+  margin-top: 100px;
+}
+.quotetitle {
+  color: var(--txtwhite);
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.quoteprg {
+  color: var(--txtwhite);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.quotecardscontainer {
+  position: relative;
+  width: 180%;
+  display: flex;
+  left: 0;
+  justify-content: space-evenly;
+  transition: all 1s;
+}
+.quotecard {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  top: -60px;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--bgwhite);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 3px var(--footertxthead);
+  padding: 20px;
+  transition: all 0.2s;
+}
+.quotecard:hover {
+  background-color: var(--btnrose);
+}
+.quotecardimg {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.quotecard img {
+  position: relative;
+
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.quotecard > h3 {
+  color: var(--txtrose);
+  margin: 0;
+  padding: 0;
+}
+.quotecard > h4 {
+  margin: 0;
+  padding: 0;
+  color: var(--txtparagraph);
+}
+.quotecard > p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.leadaction {
+}
+.leadaction > .container {
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+}
+.innerleadaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actionleft {
+  height: 100%;
+}
+.actionleft > img {
+  width: 100%;
+}
+.actionright {
+  width: 50%;
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.actiontitle {
+  color: var(--txtparagraph);
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+.actionprg {
+  margin: 20px 0 -20px 0;
+  color: var(--txtparagraph);
+  font-weight: 400;
+  font-size: 1rem;
+  width: 80%;
+}
+.actionbtn {
+  margin: 0;
+  padding: 0;
+}
+
+/* mbaron action */
+/* fillon footer */
+footer > .container {
+  width: 100%;
+  margin: auto;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  overflow: hidden;
+}
+.footerup {
+  justify-content: space-evenly;
+  position: relative;
+  display: flex;
+  margin-bottom: 100px;
+}
+.footerleft {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerul {
+  list-style-type: none;
+}
+.footerli {
+  margin: 20px 0;
+}
+.footerli > a {
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--txtparagraph);
+}
+.footerul > .lihead {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--footertxthead);
+}
+.footerright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footertitle {
+  font-size: 2.4rem;
+  color: var(--bgwhite);
+  font-weight: 370;
+}
+.footerform {
+  background-color: var(--bgwhite);
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 15px;
+}
+.footerform > input {
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+  margin: 0;
+  color: var(--txtparagraph);
+  font-size: 1rem;
+  padding: 25px 25px;
+}
+.footerform > input:focus {
+  border: none;
+
+  outline: none;
+}
+.footerform > button {
+  margin: 15px 15px;
+  padding: 1px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--btnrose);
+  background-color: var(--herobtncol);
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.footerform > button:hover {
+  background-color: var(--navbtnbg);
+  color: var(--herobtncol);
+  box-shadow: 0px 0px 10px 0px var(--herobtncol);
+}
+.footerbg {
+  position: absolute;
+  height: 947px;
+  left: 792px;
+  top: -230px;
+  border-radius: 250px;
+  box-shadow: -21px -14px 0px 0px var(--heroshadow);
+  z-index: -1;
+  width: 1108px;
+  background-color: var(--bgblue);
+  transform: rotateX(122deg) rotateY(10deg) rotateZ(29deg);
+}
+.footerbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+.footerbottom > .copyright > h3 {
+  color: var(--footertxthead);
+  margin: 20px;
+  font-weight: 500;
+}
+.footerbottom > .socialicons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.socialul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.socialli {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialul > li svg {
+  background-color: var(--heroshadow);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  height: 30px;
+  width: 30px;
+  fill: var(--bgwhite);
+  transition: all 0.15s;
+}
+.socialul > li svg:hover {
+  background-color: var(--herobtncol);
+  fill: var(--btnrose);
+  scale: 1.15;
+}
+.socialul > .socialli:first-child {
+  color: var(--bgwhite);
+  font-size: 1.6rem;
+  font-weight: 360;
+  margin-right: 10px;
+}
