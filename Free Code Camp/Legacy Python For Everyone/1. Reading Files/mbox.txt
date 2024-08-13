@@ -1,0 +1,13 @@
+Name: Mikel Kulla
+Faculty: Faculty of Economy
+University: Unviersity of Tirana
+Degree: Bachelor in Finance
+Master Degree: Master in Accounting and audit
+Email: mikel.kulla84@gmail.com
+
+Name: Simona Lagji
+Faculty: Faculty of Information Technology
+University: Unviersity of Luarasi
+Degree: Bachelor in Business Informatic
+Master Degree: None
+Email: simonalagji29@gmail.com
