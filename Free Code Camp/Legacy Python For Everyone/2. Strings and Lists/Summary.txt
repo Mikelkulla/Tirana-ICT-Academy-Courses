@@ -1,0 +1,6 @@
+                                List Summary
+- Concept of a collection                   - Slicing lists
+- Lists and definite loops                  - List methods: append, remove, insert
+- indexing and lookup                       - Sorting Lists
+- List mutability                           - Splitting lists into strings of words
+- Functions: len, min, max, sum             - Using split to parse string
