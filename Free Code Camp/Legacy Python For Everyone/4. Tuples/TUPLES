@@ -1,0 +1,8 @@
+Tuples are more efficient
+
+    - Since python doesnt have to build tuples structures to
+    be modifiable, they are similar and more efficient in terms
+    of memory use and performance than list.
+    
+    - So in our program when we are making "temporary variables" we
+    prefer tuples over lists.
