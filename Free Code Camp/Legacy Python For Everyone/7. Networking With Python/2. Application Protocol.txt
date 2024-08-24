@@ -1,0 +1,14 @@
+--  Application Protocol  --
+
+- Since TCP (and Python) gives us a reliable socket, what do we want to
+  do with the socket? What problem do we want to solve?
+- Application Protocol
+  - Mail
+  - World Wide Web
+
+--  HTTP - Hypertext Transfer Protocol  --
+
+- The dominant Application layer protocol on the internet
+- Invented for the Web - to retrieve HTML, images, documents, etc
+- Extended to be data in addition to documents - RSS Web Services, ect...
+  Basic Concept - Make a Connection - Request a document - Retrieve the Document - Close the connection
