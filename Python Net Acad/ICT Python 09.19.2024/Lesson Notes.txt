@@ -1,0 +1,6 @@
+OOP
+Detyre shtepie
+Krijoni klasen e trekendesh qe do permbaje bazen, lartesine:
+beni metodat per llogaritjen e siperfaqes, 
+beni metode e cila kthen tipin e trekendeshin
+ne konstruktor mos e krijoni trekendeshin, nese nuk eshte fizikisht e mundur -> printoni errorin
